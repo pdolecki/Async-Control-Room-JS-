@@ -1,3 +1,20 @@
+/**
+Parallel Dashboard (allSettled + retry/backoff)
+WHAT:
+  Fetch several endpoints in parallel and show per-request results, timing,
+  and an overall summary. Uses allSettled so errors don't block successes.
+
+WHY:
+  - Real apps call multiple services at once
+  - You want partial results instead of "all or nothing"
+  - Surface retries/errors clearly for debugging and UX
+
+HOW:
+  - Render one "card" per endpoint
+  - Kick off all requests together (parallel)
+  - On each completion, update its card (status + ms + snippet)
+  - Track overall progress and show a final summary
+ */
 import fetchWithRetry from "../lib/fetchWithRetry.js";
 
 const endpoints = [
