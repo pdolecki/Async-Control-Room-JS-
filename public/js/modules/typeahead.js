@@ -1,3 +1,17 @@
+/**
+Typeahead (debounce + cancel + dedupe)
+WHAT:
+  Debounced input that fetches suggestions. Cancels old requests and
+  deduplicates identical in-flight queries.
+WHY:
+  - Avoid spamming the API on every keystroke
+  - Prevent race conditions (late responses overriding newer ones)
+  - Save bandwidth if the same query is requested twice quickly
+HOW:
+  - debounce(...) waits 300ms after the last keystroke
+  - AbortController cancels previous fetch before starting a new one
+  - dedupe(key, factory) returns the same Promise for identical in-flight keys
+ */
 import debounce from "../lib/debounce.js";
 import fetchWithRetry from "../lib/fetchWithRetry.js";
 import dedupe from "../lib/inflightDeduper.js";
