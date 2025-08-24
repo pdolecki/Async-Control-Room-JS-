@@ -1,9 +1,9 @@
-import initTypeahead from "./modules/typeahead.js";
-import initParallel from "./modules/parallelDashboard.js";
-import initPoolDemo from "./modules/promisePoolDemo.js";
-import initStreaming from "./modules/streamingDemo.js";
-import initWorker from "./modules/workerDemo.js";
-import initWS from "./modules/websocketDemo.js";
+import initTypeahead from "./js/modules/typeahead.js";
+import initParallel from "./js/modules/parallelDashboard.js";
+import initPoolDemo from "./js/modules/promisePoolDemo.js";
+import initStreaming from "./js/modules/streamingDemo.js";
+import initWorker from "./js/modules/workerDemo.js";
+import initWS from "./js/modules/websocketDemo.js";
 
 initTypeahead(document.querySelector("#typeahead"));
 initParallel(document.querySelector("#parallel"));
