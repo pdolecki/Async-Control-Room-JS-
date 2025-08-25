@@ -1,5 +1,5 @@
-import initTypeahead from "./js/modules/typeahead.js";
-import initParallel from "./js/modules/parallelDashboard.js";
+import initTypeahead from "./js/modules/typeaheadDemo.js";
+import initParallel from "./js/modules/parallelDashboardDemo.js";
 import initPoolDemo from "./js/modules/promisePoolDemo.js";
 import initStreaming from "./js/modules/streamingDemo.js";
 import initWorker from "./js/modules/workerDemo.js";
