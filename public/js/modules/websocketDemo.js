@@ -14,7 +14,7 @@ HOW:
   - Pause buffers incoming messages; Resume flushes buffer to the log
   - Input box sends messages to the server (echoed back)
  */
-export default function initWS(root) {
+export default function initWebSocketDemo(root) {
   root.innerHTML = `
     <h2>WebSocket (reconnect + pause)</h2>
     <div class="row">

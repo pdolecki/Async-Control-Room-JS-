@@ -1,13 +1,13 @@
-import initTypeahead from "./js/modules/typeaheadDemo.js";
-import initParallel from "./js/modules/parallelDashboardDemo.js";
-import initPoolDemo from "./js/modules/promisePoolDemo.js";
-import initStreaming from "./js/modules/streamingDemo.js";
-import initWorker from "./js/modules/workerDemo.js";
-import initWS from "./js/modules/websocketDemo.js";
+import initTypeaheadDemo from "./js/modules/typeaheadDemo.js";
+import initParallelDemo from "./js/modules/parallelDemo.js";
+import initPromisePoolDemo from "./js/modules/promisePoolDemo.js";
+import initStreamingDemo from "./js/modules/streamingDemo.js";
+import initWorkerDemo from "./js/modules/workerDemo.js";
+import initWebSocketDemo from "./js/modules/websocketDemo.js";
 
-initTypeahead(document.querySelector("#typeahead"));
-initParallel(document.querySelector("#parallel"));
-initPoolDemo(document.querySelector("#pool"));
-initStreaming(document.querySelector("#stream"));
-initWorker(document.querySelector("#worker"));
-initWS(document.querySelector("#ws"));
+initTypeaheadDemo(document.querySelector("#typeahead"));
+initParallelDemo(document.querySelector("#parallel"));
+initPromisePoolDemo(document.querySelector("#pool"));
+initStreamingDemo(document.querySelector("#stream"));
+initWorkerDemo(document.querySelector("#worker"));
+initWebSocketDemo(document.querySelector("#ws"));

@@ -1,5 +1,5 @@
 /**
-Typeahead (debounce + cancel + dedupe)
+Typeahead Demo (debounce + cancel + dedupe)
 WHAT:
   Debounced input that fetches suggestions. Cancels old requests and
   deduplicates identical in-flight queries.
@@ -16,9 +16,9 @@ import debounce from "../lib/debounce.js";
 import fetchWithRetry from "../lib/fetchWithRetry.js";
 import dedupe from "../lib/inflightDeduper.js";
 
-export default function initTypeahead(root) {
+export default function initTypeaheadDemo(root) {
   root.innerHTML = `
-    <h2>Typeahead (debounce + cancel)</h2>
+    <h2>Typeahead Demo(debounce + cancel)</h2>
     <div class="row">
       <input id="q" placeholder="Search Wikipedia..." />
       <button id="abort">Abort</button>

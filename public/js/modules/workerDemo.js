@@ -14,9 +14,9 @@ HOW:
   - Worker: run heavy loop in worker → heartbeat keeps ticking
   - Show durations + missed beats for both paths
  */
-export default function initWorker(root) {
+export default function initWorkerDemo(root) {
   root.innerHTML = `
-    <h2>Web Worker (offload)</h2>
+    <h2>Web Worker Demo (offload)</h2>
     <p class="muted">Heavy math (~2M ops). Watch the heartbeat — it should keep ticking if work is offloaded.</p>
     <div class="row">
       <button id="run-main"  type="button">Run on Main</button>

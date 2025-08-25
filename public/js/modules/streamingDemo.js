@@ -13,7 +13,7 @@ HOW:
   - reader.read() appends chunks as they arrive
   - Stop button calls reader.cancel(); the stream's cancel() clears the timer
  */
-export default function initStreaming(root) {
+export default function initStreamingDemo(root) {
   root.innerHTML = `
     <h2>Streaming Demo</h2>
     <div class="row">

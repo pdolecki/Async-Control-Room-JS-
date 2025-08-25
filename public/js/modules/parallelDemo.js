@@ -1,5 +1,5 @@
 /**
-Parallel Dashboard (allSettled + retry/backoff)
+Parallel Demo (allSettled + retry/backoff)
 WHAT:
   Fetch several endpoints in parallel and show per-request results, timing,
   and an overall summary. Uses allSettled so errors don't block successes.
@@ -36,9 +36,9 @@ const endpoints = [
   },
 ];
 
-export default function initParallel(root) {
+export default function initParallelDemo(root) {
   root.innerHTML = `
-    <h2>Parallel Dashboard</h2>
+    <h2>Parallel Demo</h2>
     <p class="muted">Runs all requests at once; updates each card as it finishes. Retries with backoff. Uses <code>Promise.allSettled</code> for a final summary.</p>
 
     <div class="row">

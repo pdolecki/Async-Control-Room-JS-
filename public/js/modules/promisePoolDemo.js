@@ -15,9 +15,9 @@ HOW:
  */
 import promisePool from "../lib/promisePool.js";
 
-export default function initPoolDemo(root) {
+export default function initPromisePoolDemo(root) {
   root.innerHTML = `
-    <h2>Promise Pool (concurrency limiter)</h2>
+    <h2>Promise Pool Demo (concurrency limiter)</h2>
 
     <div class="row">
       <label>Concurrency
