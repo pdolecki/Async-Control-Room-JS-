@@ -1,3 +1,19 @@
+/**
+WebSocket Demo (connect + reconnect + pause buffer + send)
+WHAT:
+  Connects to a WebSocket echo server. Shows live state, message counters,
+  pause/resume buffering, and exponential backoff reconnects.
+
+WHY:
+  - Real apps need resilient WS connections (auto-retry, backoff, buffering)
+  - Users should see whether they’re connected and what happens when paused
+
+HOW:
+  - Connect button establishes a WS; Disconnect safely closes it
+  - Reconnect uses capped exponential backoff with jitter
+  - Pause buffers incoming messages; Resume flushes buffer to the log
+  - Input box sends messages to the server (echoed back)
+ */
 export default function initWS(root) {
   root.innerHTML = `
     <h2>WebSocket (reconnect + pause)</h2>
